@@ -1,0 +1,1244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Custom Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff6347; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff6347; 
+  }
+/*Custom Scrollbar*/
+
+/*Navbar CSS Start*/
+.navbar{
+    display: flex;
+    padding: 10px 80px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    /* box-shadow: 0px 0px 6px #888888;
+    position: relative;
+    z-index: 2; */
+}
+.logo{
+    color: tomato;
+    font-family: sans-serif;
+}
+.nav-list li{
+   display: inline;
+   margin: 0px 10px;
+   list-style: none;
+}
+.nav-list li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: tomato;
+}
+
+.search-box{
+
+    border: 1px solid tomato;
+    height: 30px;
+    padding: 0 10px;
+    font-family: sans-serif;
+    color: tomato;
+}
+.search-box:focus {
+
+    outline: none;
+}
+.search-btn{
+    border: 1px solid tomato;
+    background-color: white;
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.search-btn:hover{
+    cursor: pointer;
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+}
+/*Navbar CSS End*/
+
+/*Hero Section CSS Start*/
+.hero-section{
+    display: flex;
+    background-color: tomato;
+    height: 500px;
+    padding: 0 80px;
+}
+.section-box{
+    width: 50%;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-heading{
+    font-family: sans-serif;
+    color: white;
+    font-size: 64px;
+    position: relative;
+    animation-name: hero-heading-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes hero-heading-animation{
+    0% {
+        opacity: 0;
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+.hero-description{
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 17ch;
+    animation: hero-description-animation 2s steps(17), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+@keyframes hero-description-animation {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.hero-button{
+    margin: 10px 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: 1px solid #ffffff;
+}
+.hero-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: tomato;
+}
+.right-section{
+    display: flex;
+}
+.hero-image{
+    height: 300px;
+    width: auto;
+    margin: auto;
+}
+/*Hero Section CSS End*/
+
+
+/*Services Section CSS Start*/
+.services-section{
+    height: 500px;
+    padding: 50px 80px;
+    background-color: white;
+}
+
+.services-top{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-heading{
+    font-family: sans-serif;
+    color: tomato;
+    font-size: 42px;
+}
+
+.services-bottom{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #ffa494;
+    height: 330px;
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-box:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #ffa494;
+}
+
+.service-box h3{
+    font-family: sans-serif;
+    color: tomato;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.service-box p{
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    text-justify: distribute;
+    color: tomato;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-top: 5px;
+}
+
+.services-btn{
+    border: 1px solid tomato;
+    background-color: white;
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 32px;
+    width: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:12px auto;
+}
+
+.services-btn:hover{
+    cursor: pointer;
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+}
+/*Services Section CSS End*/
+
+/*About Section CSS Start*/
+.about-section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.about-boxes{
+    height: 500px;
+    width: 50%;
+}
+.about-box-1{
+    background-color: tomato;
+    height: 500px;
+    width: 50%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-heading{
+    font-family: sans-serif;
+    color: white;
+    font-size: 42px;
+}
+.about-description{
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+.about-button{
+    margin: 10px 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: 1px solid #ffffff;
+}
+.about-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: tomato;
+}
+.about-box-2{
+    
+    height: 500px;
+    width: 50%;
+}
+
+.about-img{
+    object-fit: cover;
+    height: 500px;
+    width:100%;
+}
+/*About Section CSS End*/
+
+
+/*Contact Section CSS Start*/
+.contact-section{
+    height: 500px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-heading{
+    font-family: sans-serif;
+    color: tomato;
+    font-size: 42px;
+    text-align: center;
+}
+
+/*Contact Form*/
+.contact-form{
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    /* display: block; */
+    padding: 5px 5px;
+    margin: 5px 0px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: tomato;
+}
+.form-input:focus {
+
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: tomato;
+    opacity: 1; /* Firefox */
+}
+
+.name{
+    width: 300px;
+}
+.email{
+    width: 300px;
+}
+
+.subject{
+    width: 300px;
+}
+
+.message{
+    width: 300px;
+}
+
+.submit-btn{
+    border: 1px solid tomato;
+    background-color: white;
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 32px;
+    margin: 5px 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: white;
+}
+/*Contact Form*/
+
+/*Contact Section CSS End*/
+
+/*Footer CSS Start*/
+footer{
+    height: auto;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.footerboxes{
+    width: 25%;
+    margin: 10px;
+    padding: 50px 20px;
+}
+
+.footerboxes1{
+    width: 40%;
+    margin: 10px;
+}
+
+.footer-logo{
+    color: white;
+    font-family: sans-serif;
+}
+.footer-description{
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+.boxesheading{
+    color: white;
+    font-family: sans-serif;
+}
+.footerbox2-nav-list li{
+    /* display: inline; */
+    margin: 20px 0px;
+    list-style: none;
+ }
+ .footerbox2-nav-list li a{
+     font-family: sans-serif;
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 500;
+     color: white;
+ }
+
+ .footerbox3-nav-list li{
+    /* display: inline; */
+    margin: 20px 0px;
+    list-style: none;
+ }
+ .footerbox3-nav-list li a{
+     font-family: sans-serif;
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 500;
+     color: white;
+ }
+
+ .footerbox4-nav-list li{
+    /* display: inline; */
+    margin: 20px 0px;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+ }
+
+/*Footer CSS End*/
+
+/*Footer Copyright CSS Start*/
+.copyright{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: tomato;
+}
+.copyright-tex{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*Footer Copyright CSS End*/
+
+
+/*Media Query For Tablet Start*/
+@media only screen and (min-width: 500px) and (max-width: 768px){
+    /*Navbar CSS Start*/
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 150px;
+        padding: 0px;
+    }
+    .nav-list li a{
+        font-size: 16px;
+    }
+    .search-box{
+        height: 25px;
+    }
+    .search-btn{
+        height: 27px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    /*Navbar CSS Endt*/
+
+    /*Hero Section*/
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .section-box{
+        width: 100%;
+        margin: 10px 0px;
+    }
+     /*Hero Right Section*/
+    .hero-image{
+        height: 220px;
+        width: 350px;
+    }
+     /*Hero Right Section*/
+
+     /*Hero Left Section*/
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero-heading{
+        font-family: sans-serif;
+        color: white;
+        font-size: 36px;
+    }
+    .hero-description{
+        font-family: sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+    /*Hero Left Section*/
+
+    /*Service Section*/
+    .services-section{
+        height: 500px;
+        padding: 20px 20px;
+        background-color: white;
+    }
+    
+    .services-top{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .services-heading{
+        font-family: sans-serif;
+        color: tomato;
+        font-size: 32px;
+    }
+    
+    .services-bottom{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .service-box{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px #ffa494;
+        height: 370px;
+        width: 30%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .service-box:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #ffa494;
+    }
+    
+    .service-box h3{
+        font-family: sans-serif;
+        color: tomato;
+        font-size: 24px;
+        /* margin-top: 20px; */
+        /* margin-bottom: 5px; */
+    }
+    
+    .service-box p{
+        font-family: sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        word-spacing: -4px;
+        letter-spacing: 0px;
+        color: tomato;
+        font-size: 14px;
+        line-height: 1.4em;
+        margin-top: 5px;
+    }
+    
+    .services-btn{
+        border: 1px solid tomato;
+        background-color: white;
+        color: tomato;
+        font-family: sans-serif;
+        font-size: 16px;
+        height: 32px;
+        width: 200px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin:12px auto;
+    }
+    
+    .services-btn:hover{
+        cursor: pointer;
+        border: 1px solid tomato;
+        background-color: tomato;
+        color: white;
+    }
+    /*Service Section*/
+
+    /*About Section*/
+    .about-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+    }
+    .about-boxes{
+        height: auto;
+        width: auto;
+    }
+    .about-box-1{
+        background-color: tomato;
+        height: auto;
+        width: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-heading{
+        font-family: sans-serif;
+        color: white;
+        font-size: 32px;
+    }
+    .about-description{
+        font-family: sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 14px;
+        line-height: 1.6em;
+        text-align: justify;
+    }
+    .about-button{
+        margin: 10px 0px;
+        width: 150px;
+        padding: 10px;
+        background-color: #ff6347;
+        color: white;
+        border: 1px solid #ffffff;
+    }
+    .about-button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: tomato;
+    }
+    .about-box-2{
+        
+        height: auto;
+        width: auto;
+        padding: 20px;
+    }
+    
+    .about-img{
+        object-fit: cover;
+        height: 300px;
+        width: 400px;
+    }
+    /*About Section*/
+
+    /*Contact Section*/
+
+    .contact-heading{
+    font-family: sans-serif;
+    color: tomato;
+    font-size: 32px;
+    text-align: center;
+    }
+
+    /*Contact Form*/
+    .contact-form{
+        margin-top: 10px;
+        width: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-input{
+        /* display: block; */
+        padding: 5px 5px;
+        margin: 5px 0px;
+        border: 1px solid tomato;
+        border-radius: 5px;
+        font-family: sans-serif;
+        color: tomato;
+    }
+    .form-input:focus {
+
+        outline: none;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: tomato;
+        opacity: 1; /* Firefox */
+    }
+
+    .name{
+        width: 300px;
+    }
+    .email{
+        width: 300px;
+    }
+
+    .subject{
+        width: 300px;
+    }
+
+    .message{
+        width: 300px;
+    }
+
+    .submit-btn{
+        border: 1px solid tomato;
+        background-color: white;
+        color: tomato;
+        font-family: sans-serif;
+        font-size: 16px;
+        height: 32px;
+        margin: 5px 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .submit-btn:hover{
+        cursor: pointer;
+        border: 1px solid tomato;
+        background-color: tomato;
+        color: white;
+    }
+    /*Contact Form*/
+    /*Contact Section*/
+
+    /*Footer CSS Start*/
+    footer{
+    height: auto;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    }
+
+    .footerboxes{
+    width: auto;
+    /* margin: 10px; */
+    padding: 10px;
+    }
+
+    .footerboxes1{
+    width: auto;
+    padding: 10px;
+    /* margin: 10px; */
+    }
+
+    .footer-logo{
+    color: white;
+    font-family: sans-serif;
+    }
+    .footer-description{
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6em;
+    text-align: justify;
+    }
+    .boxesheading{
+    color: white;
+    font-family: sans-serif;
+    }
+    .footerbox2-nav-list li{
+    /* display: inline; */
+    margin: 20px 0px;
+    list-style: none;
+    }
+    .footerbox2-nav-list li a{
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .footerbox3-nav-list li{
+    /* display: inline; */
+    margin: 20px 0px;
+    list-style: none;
+    }
+    .footerbox3-nav-list li a{
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .footerbox4-nav-list li{
+    /* display: inline; */
+    margin: 20px 0px;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    }
+
+    /*Footer CSS End*/
+
+    /*Footer Copyright CSS Start*/
+    .copyright{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: tomato;
+    }
+    .copyright-tex{
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /*Footer Copyright CSS End*/
+
+}   
+/*Media Query For Tablet End*/
+
+/*Media Query For Mobile Start*/
+@media only screen and (max-width: 500px){
+    /*Navbar CSS Start*/
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 150px;
+        padding: 0px;
+    }
+    .nav-list li a{
+        font-size: 16px;
+    }
+    .search-box{
+        height: 25px;
+    }
+    .search-btn{
+        height: 27px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    /*Navbar CSS Endt*/
+
+    /*Hero Section*/
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .section-box{
+        width: 100%;
+        margin: 10px 0px;
+    }
+     /*Hero Right Section*/
+    .hero-image{
+        height: 200px;
+        /* width: auto; */
+    }
+     /*Hero Right Section*/
+
+     /*Hero Left Section*/
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero-heading{
+        font-family: sans-serif;
+        color: white;
+        font-size: 36px;
+    }
+    .hero-description{
+        font-family: sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+    /*Hero Left Section*/
+
+    /*Service Section*/
+    .services-section{
+        height: auto;
+        padding: 20px 20px;
+        background-color: white;
+    }
+    
+    .services-top{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .services-heading{
+        font-family: sans-serif;
+        color: tomato;
+        font-size: 32px;
+        margin: 10px 0;
+    }
+    
+    .services-bottom{
+        height: auto;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .service-box{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px #ffa494;
+        height: auto;
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .service-box:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #ffa494;
+    }
+    
+    .service-box h3{
+        font-family: sans-serif;
+        color: tomato;
+        font-size: 24px;
+        /* margin-top: 20px; */
+        /* margin-bottom: 5px; */
+    }
+    
+    .service-box p{
+        font-family: sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        word-spacing: -4px;
+        letter-spacing: 0px;
+        color: tomato;
+        font-size: 14px;
+        line-height: 1.4em;
+        margin-top: 5px;
+    }
+    
+    .services-btn{
+        border: 1px solid tomato;
+        background-color: white;
+        color: tomato;
+        font-family: sans-serif;
+        font-size: 16px;
+        height: 32px;
+        width: 200px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin:12px auto;
+    }
+    
+    .services-btn:hover{
+        cursor: pointer;
+        border: 1px solid tomato;
+        background-color: tomato;
+        color: white;
+    }
+    /*Service Section*/
+
+    /*About Section*/
+    .about-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+    }
+    .about-boxes{
+        height: auto;
+        width: auto;
+    }
+    .about-box-1{
+        background-color: tomato;
+        height: auto;
+        width: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-heading{
+        font-family: sans-serif;
+        color: white;
+        font-size: 32px;
+    }
+    .about-description{
+        font-family: sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 14px;
+        line-height: 1.6em;
+        text-align: justify;
+    }
+    .about-button{
+        margin: 10px 0px;
+        width: 150px;
+        padding: 10px;
+        background-color: #ff6347;
+        color: white;
+        border: 1px solid #ffffff;
+    }
+    .about-button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: tomato;
+    }
+    .about-box-2{
+        
+        height: auto;
+        width: auto;
+    }
+    
+    .about-img{
+        object-fit: cover;
+        height: 300px;
+        /* width: auto; */
+    }
+    /*About Section*/
+
+    /*Contact Section*/
+
+    .contact-heading{
+        font-family: sans-serif;
+        color: tomato;
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    /*Contact Form*/
+    .contact-form{
+        margin-top: 10px;
+        width: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-input{
+        /* display: block; */
+        padding: 5px 5px;
+        margin: 5px 0px;
+        border: 1px solid tomato;
+        border-radius: 5px;
+        font-family: sans-serif;
+        color: tomato;
+    }
+    .form-input:focus {
+
+        outline: none;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ff6347;
+        opacity: 1; /* Firefox */
+    }
+
+    .name{
+        width: 300px;
+    }
+    .email{
+        width: 300px;
+    }
+
+    .subject{
+        width: 300px;
+    }
+
+    .message{
+        width: 300px;
+    }
+
+    .submit-btn{
+        border: 1px solid tomato;
+        background-color: white;
+        color: tomato;
+        font-family: sans-serif;
+        font-size: 16px;
+        height: 32px;
+        margin: 5px 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .submit-btn:hover{
+        cursor: pointer;
+        border: 1px solid tomato;
+        background-color: tomato;
+        color: white;
+    }
+    /*Contact Form*/
+    /*Contact Section*/
+
+    /*Footer CSS Start*/
+    footer{
+        height: auto;
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        flex-direction: column;
+    }
+
+    .footerboxes{
+        width: auto;
+        /* margin: 10px; */
+        padding: 10px;
+    }
+
+    .footerboxes1{
+        width: auto;
+        padding: 10px;
+        /* margin: 10px; */
+    }
+
+    .footer-logo{
+        color: white;
+        font-family: sans-serif;
+    }
+    .footer-description{
+        font-family: sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 16px;
+        line-height: 1.6em;
+        text-align: justify;
+    }
+    .boxesheading{
+        color: white;
+        font-family: sans-serif;
+    }
+    .footerbox2-nav-list li{
+        /* display: inline; */
+        margin: 20px 0px;
+        list-style: none;
+    }
+    .footerbox2-nav-list li a{
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .footerbox3-nav-list li{
+        /* display: inline; */
+        margin: 20px 0px;
+        list-style: none;
+    }
+    .footerbox3-nav-list li a{
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .footerbox4-nav-list li{
+        /* display: inline; */
+        margin: 20px 0px;
+        list-style: none;
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+
+    /*Footer CSS End*/
+
+    /*Footer Copyright CSS Start*/
+    .copyright{
+        width: 100%;
+        padding: 10px 0px;
+        background-color: tomato;
+    }
+    .copyright-tex{
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /*Footer Copyright CSS End*/
+}   
+/*Media Query For Mobile End*/
